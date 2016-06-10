@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Refugeecamps</title>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Refugee camps</li>
+      <li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="dropdown menu" data-dropdown-menu>
+      
+      <li>
+        <a href="#">Language</a>
+        <ul class="menu vertical">
+          <li><a href="#">English</a></li>
+          <li><a href="#">Arab</a></li>
+         
+        </ul>
+      </li>
+      <li><a href="#">Detect location</a></li>
+      <li><%= link_to 'contact us', aboutus_url%></li>
+      <li><a href="http://localhost:3000/welcome/aboutus">About us</a></li>
+       <li><a href="http://localhost:3000/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<%= yield %>
+
+
+<div class="callout large secondary">
+<div class="row">
+<div class="large-4 columns">
+<h5> Description, copyleft...</h5>
+<p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit.</p>
+</h4>
+</div>
+<div class="large-3 large-offset-2 columns">
+<ul class="menu vertical">
+<li><a href="#">Contact </a></li>
+<li><a href="#">About us</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html>
